@@ -233,7 +233,7 @@ describe('ushahidi_api', function() {
         });
     });
 
-    it('should return a list of categories', function() {
+    it.only('should return a list of categories', function() {
         tester.check_state({current_state: 'report_description'}, 'foo',
             'report_category',
             "^Select a category"
